@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+    <title>Raxus Slider</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- for documentation: you don't need them -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="documentation/css/documentation.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css" media="screen" type="text/css">
+    <script type="text/javascript" src="documentation/js/document.js"></script>
+    <script src="documentation/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- for documentation #end: you don't need them -->
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="header">
+    <div class="container">
+        <h1><a href="index.html">Raxus Slider <small>2.0.4</small></a></h1>
+
+        <div class="menu">
+            <a href="documentation.html">Documentation</a>
+            <a href="#changelog">Change-log</a>
+            <a target="_blank" href="http://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343?ref=bqra">Buy This at 14$</a>
+        </div>
+    </div>
+</div>
+
+<section class="usage">
+    <div class="container">
+        <h2>Usage &amp; Documentation</h2>
+        
+        <strong>Installation</strong>
+        When starting using Raxus Slider, you should add this lines in your &lt;head&gt; tag. First, we puts jQuery file url (if you have one, then you don't need second one). Secondly, we put Raxus Slider <b>.css</b> &amp; <b>.js</b> files urls like that. 
+
+        <pre>
+            <code>&lt;!-- jQuery --&gt;
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+&lt;!-- jQuery #end --&gt;
+
+&lt;!-- for Raxus Slider --&gt;
+&lt;link rel="stylesheet" href="css/raxus.css"&gt; &lt;!-- (13KB) --&gt;
+
+&lt;script type="text/javascript" src="js/raxus-slider.min.js"&gt;&lt;/script&gt; &lt;!-- .min (9kb) (You can use 'raxus-slider.js' [15KB]) --&gt;
+&lt;!-- for Raxus Slider #end --&gt;</code>
+        </pre>
+
+        <div class="clearfix"></div>
+
+        <strong>Usage</strong>
+        For use Raxus Slider on your page, you should paste that codes where you want to see Raxus Slider and define your slider id to div of <b>.raxus-slider</b> like <b>yourID</b>. And your images should come into <br><b>&lt;li class="slide"&gt;&lt;/li&gt;</b>. That <b>li</b>'s determines your images line. Ok, let's set some styles. 
+
+        <pre>
+            <code>&lt;div id="yourID" class="raxus-slider"&gt;
+
+    &lt;ul class="slider-relative"&gt;
+
+        &lt;li class="slide"&gt;
+            &lt;img src="img/content/1.jpg" alt="" /&gt; &lt;!-- your image --&gt;
+        &lt;/li&gt;
+
+        ...
+
+        &lt;li class="slide"&gt;
+            &lt;img src="img/content/12.jpg" alt="" /&gt; &lt;!-- your image --&gt;
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+
+&lt;/div&gt;</code>
+        </pre>
+        
+        <div class="clearfix"></div>
+
+        <strong>Styles</strong>
+        You can set your Raxus Slider's width, height value whatever you want from a few <b>.css</b> lines. Also you can change <b>thumbnails</b> width, height value with same way. Let's see our example. 
+
+        <pre>
+            <code>#yourID {
+    width: 100%;
+    height: 550px;
+}
+#yourID .mini-images li {
+    width: 70px;
+    height: 70px;
+}</code>
+        </pre>
+
+        <div class="clearfix"></div>
+
+        <strong>Options &amp; Features</strong>
+
+        <small>Slider Options</small>
+        <div class="clearfix"></div>
+        All Raxus Slider features uses data attributes. All data attributes are optional. If you don't want use them or if you erase them data attributes, they uses their default settings. Let's see that features how to use.
+
+        <pre>
+            <code>&lt;div id="yourID" // your Id 
+
+     class="raxus-slider" 
+     // Raxus Slider classname — don't delete
+
+     data-direction="vertical" 
+     // Slide direction — Default: '<b>horizontal</b>'
+
+     data-arrows="show" 
+     // Arrows show — Default: 'hide' — Other options: '<b>auto-hide</b>'
+
+     data-autoplay="10000" 
+     // Slider auto-play — Default: 'false' — Other options: <b>All Number</b>
+
+     data-fullscreen="show" 
+     // Slider fullscrenn button — Default: 'hide'
+
+     data-thumbnail="bottom" 
+     // Thumbnail positions — Default: 'off' — Other options: '<b>left</b>', '<b>right</b>', '<b>top</b>'
+
+     data-keypress="true" 
+     // Slider keyboard control — Default: 'false'
+
+     data-dots="show"&gt;
+     // Slider dots — Default: 'hide' 
+
+     data-loop="false"&gt;
+     // Slider looping — Default: 'true'
+
+     data-bgcolor="#000000"&gt;
+     // Slide area background color — Default: '<b>#111111</b>' — Other options: Unlimited colors and '<b>transparent</b>'
+
+     data-thumbbgcolor="#ffffff"&gt;
+     // Slider thumbnail area background color — Default: '<b>#222222</b>' — Other options: Unlimited colors and '<b>transparent</b>' 
+            
+     ...
+
+&lt;/div&gt;</code>
+        </pre>
+
+        <small>Video Option</small>
+        <div class="clearfix"></div>
+        You can put video to easily in your slide area from <b>Youtube</b> and <b>Vimeo</b>. Just paste video url like '<b>http://www.youtube.com/watch?v=WzV6mXIOVl4</b>' or '<b>http://vimeo.com/84216271</b>'.
+
+        <pre>
+            <code><span class="opacity">&lt;li class="slide"&gt;
+    &lt;img src="#yourimgurl"</span> data-videourl="http://www.youtube.com/watch?v=WzV6mXIOVl4" <span class="opacity">/&gt;
+&lt;/li&gt;</span></code>
+        </pre>
+
+        <small>Custom Thumbnail Option</small>
+        <div class="clearfix"></div>
+        If your slider's data-thumbnail attribute option is open ('left', 'right', 'top', 'bottom') then Raxus Slider set thumbnails image content automatically. But if you want use different images in thumbnails area, then you can define custom url for each image. You can do that in this way.
+
+        <pre>
+            <code><span class="opacity">&lt;li class="slide"&gt;
+    &lt;img src="#yourimgurl"</span> data-thumbnailurl="#yourdifferentimageurl" <span class="opacity">/&gt;
+&lt;/li&gt;</span></code>
+        </pre>
+
+        <small>Captions</small>
+        <div class="clearfix"></div>
+        You can put animated captions each slide. You should put two divs in <b>&lt;li class="slide"&gt;&lt;/li&gt;</b> for this. And you can add <b>link</b> that caption.
+
+        <pre>
+            <code><span class="opacity">&lt;li class="slide"&gt;
+    &lt;img src="img/content/1.jpg" alt="" /&gt;</span>
+    &lt;a href="#link"&gt; // if you don't want, just delete it
+        &lt;span class="text"&gt;
+            &lt;strong&gt;Breaking Bad&lt;/strong&gt;
+            &lt;small&gt;American crime drama television series created and produced by Vince Gilligan.&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/a&gt;
+<span class="opacity">&lt;/li&gt;</span></code>
+        </pre>
+
+        <small>Caption Animations</small>
+        <div class="clearfix"></div>
+        Captions are animated div. And you can select animation direction which you want. There is 4 direction class-name; <b>.ani-left</b>, <b>.ani-top</b>, <b>.ani-right</b>, <b>.ani-bottom</b>. If you don't write any direction class-name then default animation direction sets as <b>.ani-left</b>.
+
+        <pre>
+            <code><span class="opacity">&lt;li class="slide"&gt;
+    &lt;img src="img/content/1.jpg" alt="" /&gt;
+    &lt;a href="#link"&gt; // if you don't want, just delete it
+        &lt;span class="text</span> ani-top<span class="opacity">"&gt;
+            &lt;strong&gt;Breaking Bad&lt;/strong&gt;
+            &lt;small&gt;American crime drama television series created and produced by Vince Gilligan.&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/a&gt;
+&lt;/li&gt;</span></code>
+        </pre>
+
+        <small>Custom Image Ratios</small>
+        <div class="clearfix"></div>
+        Image ratio is important issue. Raxus Slider have 3 model for this. '<b>fix-width</b>', '<b>fix-height</b>', '<b>fit</b>'. And you can use them to all images in the slider or you can use for single slide area. But there is no special ratio for your images, no need to add any class your slider. Raxus Slider locates your image to right area. And you can see ratio classnames and their views at the bottom.
+
+        <pre>
+            <code><span class="opacity">&lt;div id="yourID" class="raxus-slider </span>fix-height<span class="opacity">"&gt;</span> // It sets all image ratios in the slider
+    <span class="opacity">&lt;ul class="slider-relative"&gt;
+
+        &lt;li class="slide </span>fix-width<span class="opacity">"&gt;</span> // it sets only this image ratio ratio
+            <span class="opacity">&lt;img src="img/content/1.jpg" alt="" /&gt; &lt;!-- your image --&gt;
+        &lt;/li&gt;
+
+    &lt;/ul&gt;
+&lt;/div&gt;</span></code>
+        </pre>
+        
+        <p class="text-center ratio-sample">
+            <img src="documentation/img/ratios.png" alt="" class="img-responsive" style="display: inline-block" />
+        </p>
+
+    </div>
+
+</section>
+
+<section class="changelog" id="changelog">
+    <div class="container">
+        <h2>Changelog</h2>
+
+        <small>v2.0.4</small>
+        <ul>
+            <li>Bug is fixed that slider is not stop when you press play button on videos</li>
+        </ul>
+
+        <small>v2.0.3</small>
+        <ul>
+            <li>Some navigation menu closing bug when slideshow slides with autoplay is fixed</li>
+            <li>Improved multi-Raxus Slider stability in one page</li>
+        </ul>
+
+        <small>v2.0.2</small>
+        <ul>
+            <li>Bug when scrolling the page on touchscreen is fixed</li>
+        </ul>
+
+        <small>v2.0.1</small>
+        <ul>
+            <li>Some bugs fixed</li>
+            <li>Performance improvements for firefox</li>
+        </ul>
+
+        <small>v2.0</small>
+        <ul>
+            <li>Added: Draggable slide area in all directions</li>
+            <li>Added: Draggable thumbnail area in all directions</li>
+            <li>Added: Add link your slides</li>
+            <li>Added: Custom cursor pointers by slide way status</li>
+            <li>Improved javascript file</li>
+        </ul>
+
+        <small>v1.4</small>
+        <ul>
+            <li>raxus-slider.js file compatibility is improved for Wordpress users</li>
+            <li>Added: Caption animations now coming from 4 directions which you want. Just set your class-name.</li>
+        </ul>
+
+        <small>v1.3</small>
+        <ul>
+            <li>Added background-color change option with data-attributes for slide and thumbnail area </li>
+            <li>Added do not loop option. Now, you can set slider for don't loop from data-attribute.</li>
+            <li>Improvements in js and css files</li>
+        </ul>
+
+        <small>v1.2</small>
+        <ul>
+            <li>Fixed arrow, play and thumbnail clicks for mobile</li>
+            <li>Now autoplay pausing while you sliding. And it's resuming when slide animation done</li>
+            <li>Added some css class for mobile views (captions and dots)</li>
+        </ul>
+
+        <small>v1.1</small>
+        <ul>
+            <li>Now, arrows positions are calculating from css.</li>
+            <li>Improved code in .js file</li>
+        </ul>
+
+        <small>v1.0</small>
+        <ul>
+            <li>Raxus Slider / Easy-to-Use Advanced HTML5 Slider has been approved for sale on CodeCanyon.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="buy-this">
+    <div class="container">
+        <h2>You Like It?</h2>
+        
+        <div class="other-links-bar">
+            <a href="http://codecanyon.net/item/raxus-slider-easytouse-advanced-html5-slider/7008343?ref=bqra" class="button">BUY THIS SLIDER at $12 &rarr;</a>
+            <div class="clearfix">or</div>
+            
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fraxus.pikselmatik.com%2Fdocumentation.html&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=256320627733956" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width: 110px;" allowTransparency="true"></iframe>
+
+        </div>
+
+    </div>
+</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48616881-1', 'pikselmatik.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html> 

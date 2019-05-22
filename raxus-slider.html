@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Raxus Slider</title>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<!-- for Raxus Slider -->
+	<link rel="stylesheet" href="css/raxus.css">
+	<script type="text/javascript" src="js/raxus-slider.js"></script>
+    <!-- for Raxus Slider #end -->
+
+    <style>
+        #mySlider {
+            width: 700px;
+            height: 450px;
+            display: block;
+            margin: auto;
+        }
+        #mySlider .mini-images li {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+
+</head>
+<body>
+
+	<div id="mySlider" class="raxus-slider" data-arrows="show" data-autoplay="6000" data-fullscreen="show" data-dots="show" data-keypress="true" data-thumbnail="bottom">
+        <ul class="slider-relative" id="transformed">
+
+        	<!-- li's -->
+            <li class="slide">
+                <img src="img/content/1.jpg" alt="">
+            </li>
+
+            <li class="slide">
+                <img src="img/content/13.jpg" alt="" data-videourl="http://www.youtube.com/watch?v=WzV6mXIOVl4" />
+                <span class="text">
+                    <strong>Video Slide</strong>
+                    <small>You can add video link from Youtube and Vimeo.</small>
+                </span>
+            </li>
+            <li class="slide">
+                <img src="img/content/2.jpg" alt="" data-thumbnailurl="img/content/10.jpg">
+                <span class="text">
+                    <strong>Custom Thumbnail</strong>
+                    <small>Raxus Slider gets thumbnail urls automatically. But you can add your custom thumbnail url easily.</small>
+                </span>
+            </li>
+            <li class="slide">
+                <img src="img/content/14.jpg" alt="">
+                <span class="text">
+                    <strong>The Wolf of Wall Street</strong>
+                </span>
+            </li>
+            <li class="slide fix-height">
+                <img src="img/content/4.jpg" alt="" data-videourl="http://vimeo.com/84216271" />
+            </li>
+            <li class="slide">
+                <img src="img/content/5.jpg" alt="">
+            </li>
+            <li class="slide fix-width">
+                <img src="img/content/6.jpg" alt="">
+                <div class="text">
+                    <strong>Scarface</strong>
+                </div>
+            </li>
+            <li class="slide fix-width">
+                <img src="img/content/3.jpg" alt="">
+            </li>
+            <li class="slide">
+                <img src="img/content/7.jpg" alt="">
+            </li>
+            <li class="slide">
+                <img src="img/content/8.jpg" alt="">
+            </li>
+            <li class="slide">
+                <img src="img/content/9.jpg" alt="">
+            </li>
+            <li class="slide">
+                <img src="img/content/10.jpg" alt="">
+            </li>
+            <li class="slide">
+                <img src="img/content/11.jpg" alt="">
+                <span class="text">
+                    <strong>Star Wars</strong>
+                    <small>Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The film series, consisting of two trilogies.</small>
+                </span>
+            </li>
+            <li class="slide">
+                <img src="img/content/12.jpg" alt="">
+            </li>
+            <li class="slide fix-width">
+                <img src="img/content/15.jpg" alt="">
+                <span class="text">
+                    <strong>HER</strong>
+                </span>
+            </li>
+        </ul>
+    </div>
+	
+</body>
+</html>
