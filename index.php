@@ -4,9 +4,6 @@
 
 <meta http-equiv="refresh" content="0;URL=https://bqra.github.io/Raxus-Slider-Doc/" />
 
-<script src="http://demos.pikselmatik.com/assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="http://demos.pikselmatik.com/assets/js/custom-jquery.js" type="text/javascript"></script>
-
 </head>
 <body>
 
